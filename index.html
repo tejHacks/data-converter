@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Converter</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Data Converter</h2>
+        <div class="card p-4 shadow-sm">
+            <!-- Convert From -->
+            <div class="mb-3">
+                <label for="fromValue" class="form-label">Convert From:</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="fromValue" placeholder="Enter value">
+                    <select class="form-select" id="fromUnit">
+                        <option value="bytes">Bytes</option>
+                        <option value="kb">Kilobytes</option>
+                        <option value="mb">Megabytes</option>
+                        <option value="gb">Gigabytes</option>
+                        <option value="tb">Terabytes</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Swap Button -->
+            <div class="text-center my-2">
+                <button class="btn btn-secondary" id="swapBtn">
+                    <i class="fa fa-exchange"></i>
+                </button>
+            </div>
+            <!-- Convert To -->
+            <div class="mb-3">
+                <label for="toValue" class="form-label">Convert To:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="toValue" disabled placeholder="Result">
+                    <select class="form-select" id="toUnit">
+                        <option value="bytes">Bytes</option>
+                        <option value="kb">Kilobytes</option>
+                        <option value="mb">Megabytes</option>
+                        <option value="gb">Gigabytes</option>
+                        <option value="tb">Terabytes</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Convert Button -->
+            <button class="btn btn-primary w-100 mt-3" id="convertBtn">
+                Convert <i class="fa fa-calculator"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
