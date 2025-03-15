@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #001a2d !important;
+    background: #001a2d;
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,6 +22,8 @@ body {
 h2 {
     margin-bottom: 15px;
     color: #333;
+    font-size: xx-large;
+    font-weight: 600;
 }
 
 .input-group {
